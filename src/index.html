@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>英伟达AI保安 — sketchbook</title>
+  <style>
+    html, body { margin: 0; background: #222; }
+    canvas { display: block; width: 100vw; height: auto; max-width: 1920px; }
+  </style>
+</head>
+<body>
+  <canvas id="out"></canvas>
+  <script type="module">
+    import './main.js';
+    // Open with ?t=2.5 to preview a single moment in a browser.
+    const t = new URLSearchParams(location.search).get('t');
+    if (t !== null) window.renderFrame(Math.round(parseFloat(t) * 30));
+  </script>
+</body>
+</html>

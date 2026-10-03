@@ -1,0 +1,16 @@
+{
+  "name": "op55-nvidia-ai-guard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hand-drawn sketchbook motion piece: NVIDIA gives AI a security guard.",
+  "type": "module",
+  "scripts": {
+    "glyphs": "node scripts/extract-glyphs.mjs",
+    "render": "node scripts/render.mjs"
+  },
+  "license": "MIT AND LicenseRef-ArphicPL",
+  "devDependencies": {
+    "hanzi-writer-data": "^2.0.1",
+    "puppeteer-core": "^25.12.0"
+  }
+}
